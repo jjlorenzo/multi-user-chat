@@ -1,0 +1,54 @@
+/* we use @fullhuman/postcss-purgecss for prod bundling */
+@import "bootstrap/dist/css/bootstrap.min.css";
+
+html,
+body,
+#app {
+  height: 100%;
+}
+
+.flush-none > .list-group-item {
+  border-width: 0;
+}
+
+.list-group-item.day-separator {
+  text-align: center;
+  &:before {
+    border-top: 1px solid #dee2e6;
+    content: "";
+    left: 0.5rem;
+    position: absolute;
+    right: 0.5rem;
+    top: 50%;
+  }
+}
+
+.input-group-vertical {
+  & .form-control {
+    position: relative;
+    &:focus {
+      z-index: 2;
+    }
+    &:first-of-type {
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+      margin-bottom: -1px;
+    }
+    &:not(:first-of-type):not(:last-of-type) {
+      border-radius: 0;
+      margin-bottom: -1px;
+    }
+    &:last-of-type {
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
+    }
+  }
+}
+
+.min-w-300px {
+  min-width: 300px;
+}
+
+.ms-2-neg {
+  margin-left: -0.5rem !important;
+}

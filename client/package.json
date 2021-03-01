@@ -1,0 +1,27 @@
+{
+  "name": "multi-user-chat-client",
+  "version": "0.1.0",
+  "description": "Well Revolution - Code Challenge - Multi User Chat (client)",
+  "license": "ISC",
+  "author": "Jose Jorge Lorenzo Vila <jjlorenzo@users.noreply.github.com> (https://github.com/jjlorenzo)",
+  "scripts": {
+    "vite:devel": "vite --clearScreen=false",
+    "vite:build": "tsc && vite build",
+    "vite:serve": "vite preview"
+  },
+  "dependencies": {
+    "bootstrap": "^5.0.0-beta2",
+    "bootstrap-icons": "^1.3.0",
+    "mqtt": "^4.2.6",
+    "mqtt-pattern": "^1.2.0",
+    "preact": "^10.5.9"
+  },
+  "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^4.0.2",
+    "@prefresh/vite": "^2.0.0",
+    "@types/node": "^14.14.31",
+    "postcss-nesting": "^7.0.1",
+    "typescript": "^4.1.3",
+    "vite": "^2.0.0"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "multi-user-chat-server",
+  "version": "0.1.0",
+  "description": "Well Revolution - Code Challenge - Multi User Chat (server)",
+  "license": "ISC",
+  "author": "Jose Jorge Lorenzo Vila <jjlorenzo@users.noreply.github.com> (https://github.com/jjlorenzo)",
+  "scripts": {
+    "mqtt:devel": "nodemon -w src src/mqtt.js",
+    "mqtt:serve": "node src/mqtt.js"
+  },
+  "type": "module",
+  "dependencies": {
+    "aedes": "^0.44.2",
+    "aedes-persistence": "^8.1.2",
+    "aedes-server-factory": "^0.1.2",
+    "mqemitter": "^4.4.1",
+    "mqtt-pattern": "^1.2.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
